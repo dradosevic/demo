@@ -45,6 +45,7 @@ graalvmNative.toolchainDetection = false
 graalvmNative {
     binaries.configureEach {
         buildArgs.add("--initialize-at-build-time=com.example")
+        //buildArgs.add("--add-exports=org.graalvm.nativeimage.builder/com.oracle.svm.core.jni=ALL-UNNAMED")
     }
 }
 micronaut {
